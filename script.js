@@ -78,7 +78,7 @@ function consoleLogSongs() {
          songTitle.classList.add("song-title");
          songTitle.innerText = song.fields.song_title;
          songContainer.append(songTitle);
-
+ 
 
          // add  artist to our song container
          var songArtist =document.createElement("h1");
