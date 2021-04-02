@@ -35,3 +35,7 @@ body {
 .song-description.active {
     display: block;
 }
+
+.filter {
+    padding: 2rem;
+}

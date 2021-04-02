@@ -106,7 +106,33 @@ function consoleLogSongs() {
              songDescription.classList.toggle("active");
          })
          songImage.classList.toggle("active");
-         
+
+
+
+        // get genre field from airtable
+        // loop through the array and add each genre as
+        // a class to the song container
+
+        var songGenre = song.fields.genre;
+        songGenre.forEach(function(genre){
+            songContainer.classList.add(genre)
+        })
+
+        // add event listener to our filter
+        // to add an active class to our song
+
+        var filterPop = document.querySelector('.pop');
+        filterPop.addEventListener("click", function(){
+
+            if (songContainer.classList.contains("pop")) {
+                songContainer.style.background ="red";
+            } else {
+                songContainer.style.background = "white";
+            }
+        })
+    
+    
+    
     });
 
     
