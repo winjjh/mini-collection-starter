@@ -130,7 +130,43 @@ function consoleLogSongs() {
                 songContainer.style.background = "white";
             }
         })
+
+        var filterRb = document.querySelector('.rb_soul');
+        filterRb.addEventListener("click", function(){
+            if (songContainer.classList.contains("rb_soul")) {
+                songContainer.style.background ="blue";
+            } else {
+                songContainer.style.background = "white";
+            }
+        })
+
+        var filterElectronica = document.querySelector('.electronica');
+        filterElectronica.addEventListener("click", function(){
+            if (songContainer.classList.contains("electronica")) {
+                songContainer.style.background ="pink";
+            } else {
+                songContainer.style.background = "white";
+            }
+        })
     
+        var filterBallad = document.querySelector('.ballad');
+        filterBallad.addEventListener("click", function(){
+            if (songContainer.classList.contains("ballad")) {
+                songContainer.style.background ="purple";
+            } else {
+                songContainer.style.background = "white";
+            }
+        })
+
+        var filterDance = document.querySelector('.dance');
+        filterDance.addEventListener("click", function(){
+            if (songContainer.classList.contains("dance")) {
+                songContainer.style.background ="lightblue";
+            } else {
+                songContainer.style.background = "lightblue";
+            }
+        })
+
     
     
     });
